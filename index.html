@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Programming Portfolio </title>
+<link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+<script src="assets/indexScripts.js"></script>
+<script> 
+
+
+function colorChange() {
+	
+    var elements = document.getElementsByClassName("button");
+	var horizontalRule = document.getElementsByClassName("shortHorizontal");
+	var elements1 = document.getElementsByClassName("colorChanger");
+	
+	var linkHover = document.getElementsByTagName("a");
+	
+	if (i === 1 && elements[0]) {
+		elements1[0].innerHTML = "Dark Theme";
+		document.body.style.backgroundColor = "black";
+		document.body.style.color = "#009933";
+		elements[0].style.backgroundColor = "#009933";
+		elements[0].style.color = "black";
+		elements1[0].style.backgroundColor = "#009933";
+		horizontalRule[0].style.border = "1px solid #009933";
+		horizontalRule[1].style.border = "1px solid #009933";
+		horizontalRule[2].style.border = "1px solid #009933";
+		horizontalRule[0].style.transition = "all 1s";
+		horizontalRule[1].style.transition = "all 1s";
+		horizontalRule[2].style.transition = "all 1s";
+		i = 2;
+		
+	}
+	else if (i === 1 && elements[0] != true) {
+		elements1[0].innerHTML = "Dark Theme";
+		document.body.style.backgroundColor = "black";
+		document.body.style.color = "#009933";
+		elements1[0].style.backgroundColor = "#009933";
+		horizontalRule[0].style.border = "1px solid #009933";
+		horizontalRule[1].style.border = "1px solid #009933";
+		horizontalRule[2].style.border = "1px solid #009933";
+		horizontalRule[0].style.transition = "all 1s";
+		horizontalRule[1].style.transition = "all 1s";
+		horizontalRule[2].style.transition = "all 1s";
+		i = 2;
+	}
+	else if (i === 2 && elements[0]) {
+		elements1[0].innerHTML = "Light Theme";
+		document.body.style.backgroundColor = "#efefef";
+		document.body.style.color = "black"
+		elements[0].style.backgroundColor = "#efefef";
+		elements[0].style.color = "black";
+		elements1[0].style.backgroundColor = "#efefef";
+		horizontalRule[0].style.border = "1px solid #efefef";
+		horizontalRule[0].style.borderStyle = "inset";
+		horizontalRule[1].style.border = "1px solid #efefef";
+		horizontalRule[1].style.borderStyle = "inset";
+		horizontalRule[2].style.border = "1px solid #efefef";
+		horizontalRule[2].style.borderStyle = "inset";
+		horizontalRule[0].style.transition = "all 1s";
+		horizontalRule[1].style.transition = "all 1s";
+		horizontalRule[2].style.transition = "all 1s";
+		i = 1;
+	}
+	else if (i == 2 && elements[0] != true) {
+		elements1[0].innerHTML = "Light Theme";
+		document.body.style.backgroundColor = "#efefef";
+		document.body.style.color = "black";
+		elements1[0].style.backgroundColor = "#efefef";
+		horizontalRule[0].style.border = "1px solid #efefef";
+		horizontalRule[0].style.borderStyle = "inset";
+		horizontalRule[1].style.border = "1px solid #efefef";
+		horizontalRule[1].style.borderStyle = "inset";
+		horizontalRule[2].style.border = "1px solid #efefef";
+		horizontalRule[2].style.borderStyle = "inset";
+		horizontalRule[0].style.transition = "all 1s";
+		horizontalRule[1].style.transition = "all 1s";
+		horizontalRule[2].style.transition = "all 1s";
+		i = 1;
+	}
+
+	
+}
+
+</script>
+</head>
+<body>
+
+<div style="top:0; right: 0; position: fixed;">
+<!-- Button created for accessibility (blindness) and aesthetic appeal. (Currently doesn't save option)-->
+<button class="colorChanger" style="vertical-align: middle;" onclick="colorChange()"><span>Light Theme</span></button>
+</div>
+
+<h1> Trevor Moore's Portfolio</h1>
+<hr class="shortHorizontal">
+<h2> Most Recent Programming &amp Scripting Projects </h2>
+
+<div class="containerProgrammingRow1">
+
+
+	<a href="default.html" id="assembly">
+
+		<div id="programming1" onmouseover="programming1Hover()" onmouseleave="programmingHoverLeave()">
+			<p>x86 Assembly</p>
+		</div>
+
+	</a>
+
+
+
+	<a href="default.html" id="javascript">
+
+		<div id="programming2" onmouseover="programming2Hover()" onmouseleave="programmingHoverLeave()">
+			<p>Javascript</p>
+		</div>
+
+	</a>
+
+
+
+	<a href="html.html" id="SQL">
+
+		<div id="programming3"  onmouseover="programming3Hover()" onmouseleave="programmingHoverLeave()">
+			<p>HTML</p>
+		</div>
+
+	</a>
+
+
+
+</div>
+<br>
+<div class="containerProgrammingRow2">
+
+
+
+	<a href="default.html" id="cPlusPlus"> 
+
+		<div id="programming4" onmouseover="programming4Hover()" onmouseleave="programmingHoverLeave()">
+			<p>C++</p>
+		</div>
+
+	</a>
+
+
+
+
+	<a href="default.html" id="visualBasic">
+
+		<div id="programming5" onmouseover="programming5Hover()" onmouseleave="programmingHoverLeave()">
+			<p>Visual Basic</p>
+		</div>
+
+	</a>
+
+
+
+	<a href="default.html" id="C">
+
+		<div id="programming6" onmouseover="programming6Hover()" onmouseleave="programmingHoverLeave()">
+			<p>C</p>
+		</div>
+
+	</a>
+
+</div>
+<br>
+
+<button class="button" style="vertical-align: middle;" onclick="moreFunction(); removeElementsByClass('button')"><span>More</span></button>
+
+<div id="emptyDiv">
+<!-- -->
+</div>
+<br>
+
+<hr class="shortHorizontal">
+
+<h2> About Me: </h2>
+<div class="contentContainer">
+Hello, my name is Trevor Moore. I enjoy computers and technology, but mainly computers over anything else. 
+Specifically, I enjoy programming, scripting, and web site development on computers. 
+I also enjoy learning new programming languages as they provide unique ways to solve a given problem. 
+Since I have a love for computers and programming, I am constantly learning about how things work and what they do. 
+<br />
+<br />
+Above you will find some links to projects that I have created using the programming / scripting language found on the respective link. 
+<br />
+</div>
+<hr class="shortHorizontal">
+<div class="contentContainer2">
+<h2> My R&eacute;sum&eacute; </h2>
+<div style="text-align: center;">
+Trevor Moore<br />
+40404 N Gavilan Peak Pkwy<br />
+Anthem, Arizona 85086<br />
+(623) 445-8600<br />
+<a href="mailto:Trevor81201@gmail.com">Trevor81201@gmail.com</a><br />
+<br />
+<strong>Education</strong><br />
+Boulder Creek High School, class of 2019 (3.5 GPA Unweighted)<br />
+<br />
+<strong>Experience</strong><br />
+
+<strong>National Honor Society (2017-Present)</strong><br />
+Teacher Assistant for two teachers in one year<br /><br />
+<strong>Future Business Leaders of America (2017-Present)</strong><br />
+Participated in Web Design for State competition<br />
+
+<br />
+<strong>Activities</strong><br />
+
+National Honor Society (2017-Present)<br />
+FBLA (2017-Present)<br />
+<br />
+<strong>Awards</strong><br />
+A/B Honor Roll, 4 Semesters<br />
+Dreamweaver Certified<br />
+<br />
+<strong>References</strong><br />
+Available upon request.
+</div>
+</div>
+<br />
+
+<hr class="shortHorizontal">
+<!--<p class="small_text">Please Keep In Mind That This Site Is Under Heavy Development Still And Will Be Updated In The Near Future.</p> -->
+<p class="small_text">If you need to get in-touch with me please either <a href="mailto:Trevor81201@gmail.com" onMouseOver="hoverLinkFunction()">e-mail me</a> or <a href="default.html">fill out a form</a>.</p>
+<p id="copyright">Copyright &copy 2017 Trevor Moore</p>
+
+</body>
+</html>

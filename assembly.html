@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>x86 Assembly</title>
+<link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+<script src="assets/indexScripts.js"></script>
+<script>
+function colorChange() {
+	
+    var elements = document.getElementsByClassName("button");
+	var horizontalRule = document.getElementsByClassName("shortHorizontal");
+	var elements1 = document.getElementsByClassName("colorChanger");
+	var backButtonElement = document.getElementsByClassName("backButton");
+	var mainHeaderElement = document.getElementsByClassName("mainHeader");
+
+	if (i === 1 && elements[0]) {
+		elements1[0].innerHTML = "Dark Theme";
+		document.body.style.backgroundColor = "black";
+		document.body.style.color = "#009933";
+		elements[0].style.backgroundColor = "#009933";
+		elements[0].style.color = "black";
+		elements1[0].style.backgroundColor = "#009933";
+		mainHeaderElement[0].style.color = "#0277bd";
+		backButtonElement[0].style.color = "#0277bd";
+		horizontalRule[0].style.border = "1px solid #009933";
+		horizontalRule[1].style.border = "1px solid #009933";
+		horizontalRule[2].style.border = "1px solid #009933";
+		horizontalRule[0].style.transition = "all 1s";
+		horizontalRule[1].style.transition = "all 1s";
+		horizontalRule[2].style.transition = "all 1s";
+		i = 2;
+		
+	}
+	else if (i === 1 && elements[0] != true) {
+		elements1[0].innerHTML = "Dark Theme";
+		document.body.style.backgroundColor = "black";
+		document.body.style.color = "#009933";
+		elements1[0].style.backgroundColor = "#009933";
+		mainHeaderElement[0].style.color = "#0277bd";
+		backButtonElement[0].style.color = "#0277bd";
+		horizontalRule[0].style.border = "1px solid #009933";
+		horizontalRule[1].style.border = "1px solid #009933";
+		horizontalRule[2].style.border = "1px solid #009933";
+		horizontalRule[0].style.transition = "all 1s";
+		horizontalRule[1].style.transition = "all 1s";
+		horizontalRule[2].style.transition = "all 1s";
+		i = 2;
+	}
+	else if (i === 2 && elements[0]) {
+		elements1[0].innerHTML = "Light Theme";
+		document.body.style.backgroundColor = "#efefef";
+		document.body.style.color = "black"
+		elements[0].style.backgroundColor = "#efefef";
+		elements[0].style.color = "black";
+		elements1[0].style.backgroundColor = "#efefef";
+		mainHeaderElement[0].style.color = "black";
+		backButtonElement[0].style.color = "black"
+		horizontalRule[0].style.border = "1px solid #efefef";
+		horizontalRule[0].style.borderStyle = "inset";
+		horizontalRule[1].style.border = "1px solid #efefef";
+		horizontalRule[1].style.borderStyle = "inset";
+		horizontalRule[2].style.border = "1px solid #efefef";
+		horizontalRule[2].style.borderStyle = "inset";
+		horizontalRule[0].style.transition = "all 1s";
+		horizontalRule[1].style.transition = "all 1s";
+		horizontalRule[2].style.transition = "all 1s";
+		i = 1;
+	}
+	else if (i == 2 && elements[0] != true) {
+		elements1[0].innerHTML = "Light Theme";
+		document.body.style.backgroundColor = "#efefef";
+		document.body.style.color = "black";
+		elements1[0].style.backgroundColor = "#efefef";
+		mainHeaderElement[0].style.color = "black";
+		backButtonElement[0].style.color = "black";
+		horizontalRule[0].style.border = "1px solid #efefef";
+		horizontalRule[0].style.borderStyle = "inset";
+		horizontalRule[1].style.border = "1px solid #efefef";
+		horizontalRule[1].style.borderStyle = "inset";
+		horizontalRule[2].style.border = "1px solid #efefef";
+		horizontalRule[2].style.borderStyle = "inset";
+		horizontalRule[0].style.transition = "all 1s";
+		horizontalRule[1].style.transition = "all 1s";
+		horizontalRule[2].style.transition = "all 1s";
+		i = 1;
+	}
+
+	
+}
+</script>
+</head>
+<body>
+
+
+<div style="font-size: 30px;">
+<a style="position: fixed; color: black; font-size: 30px; top: 0; left: 0;" class="backButton" href="index.html"> &#8678 </a>
+<div style="top:0; right: 0; position: fixed;">
+<button class="colorChanger" style="vertical-align: middle;" onclick="colorChange()"><span>Light Theme</span></button>
+</div>
+<h1 class="mainHeader">x86 Assembly</h1>
+</div>
+<hr class="shortHorizontal">
+<div class="Container">
+<p><strong>x86 Assembly</strong> is a low-level programming language which can be used for many operations. This programming language is heavily centered around registers which allow you to do operations in <strong>Assembly</strong> programs. There are ten 32-bit and six 16-bit processor registers in IA-32 architecture. The registers are grouped into three categories which include, General registers, Control registers, and Segment registers. General registers are divided into the following groups, Data registers, Pointer registers, and Index registers. If wanting to know more that isn't in this brief description, click <a target="_blank" href="https://www.tutorialspoint.com/assembly_programming/assembly_registers.htm">here</a>.</p>
+</div>
+<hr class="shortHorizontal">
+<div class="Container">
+<h2> Data Registers: </h2>
+<p> Four 32-bit data registers are used for arithmetic, logical, and other operations. These 32-bit registers can be used in three ways - </p>
+<p>As complete 32-bit data registers:<br> <a href="#EAX">EAX</a>, <a href="#EBX">EBX</a>, <a href="#ECX">ECX</a>, &amp <a href="#EDX">EDX</a>.</p>
+<p>Lower Halves of the 32-bit registers can be used as four 16-bit data registers:<br> <a href="#AX">AX</a>, <a href="#BX">BX</a>, <a href="#CX">CX</a>, &amp <a href="#DX">DX</a>.</p>
+<p>Lower and higher halves of the above-mentioned four 16-bit registers can be used as eight 8-bit data registers:<br> <a href="#AH">AH</a>, <a href="#AL">AL</a>, <a href="#BH">BH</a>, <a href="#BL">BL</a>, <a href="#CH">CH</a>, <a href="#CL">CL</a>, <a href="#DH">DH</a>, &amp <a href="#DL">DL</a>. </p>
+</div>
+<br>
+<hr class="shortHorizontal">
+
+
+</body>
+</html>

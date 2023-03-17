@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HTML</title>
+<link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+<script src="assets/indexScripts.js"></script>
+<script>
+function colorChange() {
+	
+    var elements = document.getElementsByClassName("button");
+	var horizontalRule = document.getElementsByClassName("shortHorizontal");
+	var elements1 = document.getElementsByClassName("colorChanger");
+	var backButtonElement = document.getElementsByClassName("backButton");
+	var mainHeaderElement = document.getElementsByClassName("mainHeader");
+
+	if (i === 1 && elements[0]) {
+		elements1[0].innerHTML = "Dark Theme";
+		document.body.style.backgroundColor = "black";
+		document.body.style.color = "#009933";
+		elements[0].style.backgroundColor = "#009933";
+		elements[0].style.color = "black";
+		elements1[0].style.backgroundColor = "#009933";
+		mainHeaderElement[0].style.color = "#0277bd";
+		backButtonElement[0].style.color = "#0277bd";
+		horizontalRule[0].style.border = "1px solid #009933";
+		horizontalRule[1].style.border = "1px solid #009933";
+		horizontalRule[2].style.border = "1px solid #009933";
+		horizontalRule[0].style.transition = "all 1s";
+		horizontalRule[1].style.transition = "all 1s";
+		horizontalRule[2].style.transition = "all 1s";
+		i = 2;
+		
+	}
+	else if (i === 1 && elements[0] != true) {
+		elements1[0].innerHTML = "Dark Theme";
+		document.body.style.backgroundColor = "black";
+		document.body.style.color = "#009933";
+		elements1[0].style.backgroundColor = "#009933";
+		mainHeaderElement[0].style.color = "#0277bd";
+		backButtonElement[0].style.color = "#0277bd";
+		horizontalRule[0].style.border = "1px solid #009933";
+		horizontalRule[1].style.border = "1px solid #009933";
+		horizontalRule[2].style.border = "1px solid #009933";
+		horizontalRule[0].style.transition = "all 1s";
+		horizontalRule[1].style.transition = "all 1s";
+		horizontalRule[2].style.transition = "all 1s";
+		i = 2;
+	}
+	else if (i === 2 && elements[0]) {
+		elements1[0].innerHTML = "Light Theme";
+		document.body.style.backgroundColor = "#efefef";
+		document.body.style.color = "black"
+		elements[0].style.backgroundColor = "#efefef";
+		elements[0].style.color = "black";
+		elements1[0].style.backgroundColor = "#efefef";
+		mainHeaderElement[0].style.color = "black";
+		backButtonElement[0].style.color = "black"
+		horizontalRule[0].style.border = "1px solid #efefef";
+		horizontalRule[0].style.borderStyle = "inset";
+		horizontalRule[1].style.border = "1px solid #efefef";
+		horizontalRule[1].style.borderStyle = "inset";
+		horizontalRule[2].style.border = "1px solid #efefef";
+		horizontalRule[2].style.borderStyle = "inset";
+		horizontalRule[0].style.transition = "all 1s";
+		horizontalRule[1].style.transition = "all 1s";
+		horizontalRule[2].style.transition = "all 1s";
+		i = 1;
+	}
+	else if (i == 2 && elements[0] != true) {
+		elements1[0].innerHTML = "Light Theme";
+		document.body.style.backgroundColor = "#efefef";
+		document.body.style.color = "black";
+		elements1[0].style.backgroundColor = "#efefef";
+		mainHeaderElement[0].style.color = "black";
+		backButtonElement[0].style.color = "black";
+		horizontalRule[0].style.border = "1px solid #efefef";
+		horizontalRule[0].style.borderStyle = "inset";
+		horizontalRule[1].style.border = "1px solid #efefef";
+		horizontalRule[1].style.borderStyle = "inset";
+		horizontalRule[2].style.border = "1px solid #efefef";
+		horizontalRule[2].style.borderStyle = "inset";
+		horizontalRule[0].style.transition = "all 1s";
+		horizontalRule[1].style.transition = "all 1s";
+		horizontalRule[2].style.transition = "all 1s";
+		i = 1;
+	}
+
+	
+}
+</script>
+</head>
+<body>
+<div style="font-size: 30px;">
+<a style="position: fixed; color: black; font-size: 30px; top: 0; left: 0;" class="backButton" href="index.html"> &#8678 </a>
+<div style="top:0; right: 0; position: fixed;">
+<button class="colorChanger" style="vertical-align: middle;" onclick="colorChange()"><span>Light Theme</span></button>
+</div>
+<h1 class="mainHeader">HTML</h1>
+</div>
+<hr class="shortHorizontal">
+<div class="Container">
+HTML stands for Hyper-Text Markup Language and I use it quite a bit. I generally use HTML, Javascript, and CSS in together more than most of the other programming languages that I know. I believe I enjoy website development because it was one of the first languages that I learned online. I learned HTML by looking at webpages / websites through the Inspect Element feature that is found in most modern browsers. I instantly fell in love with being able to create my own site and began to expand my knowledge.
+</div>
+<hr class="shortHorizontal">
+<div class="Container">
+I have created many webpages / websites, but below you will find images of my site that was created for FBLA.<br />
+<br />
+<img src="assets/images/Moore.png" alt="Waterlandia Site" width="70%" height="70%"/>
+<br />
+<br />
+<img src="assets/images/Moore_Waterlandia.png" alt="Waterlandia Contact Form" width="70%" height="70%" />
+</div>
+<hr class="shortHorizontal">
+<div class="Container">
+Please keep in mind that this page will be updated with newer content in the near future. So be sure to check back at a later date.
+</div>
+
+
+
+</body>
+</html>
